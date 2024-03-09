@@ -21,7 +21,6 @@ import { default as smithing } from '$lib/assets/icons/skills/Smithing.png';
 import { default as strength } from '$lib/assets/icons/skills/Strength.png';
 import { default as thieving } from '$lib/assets/icons/skills/Thieving.png';
 import { default as woodcutting } from '$lib/assets/icons/skills/Woodcutting.png';
-import { default as combat } from '$lib/assets/icons/skills/Combat.png';
 import type { Skill } from '$lib/types';
 
 export const Mapper: { [key in Skill]: string } = {
@@ -47,6 +46,5 @@ export const Mapper: { [key in Skill]: string } = {
 	Smithing: smithing,
 	Strength: strength,
 	Thieving: thieving,
-	Woodcutting: woodcutting,
-	Combat: combat
+	Woodcutting: woodcutting
 };

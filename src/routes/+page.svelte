@@ -1,6 +1,9 @@
 <script lang="ts">
+	import type { Skill as TSkill } from '$lib/types';
+	import { Skill as CSkill } from '$lib/components';
 	import { SKILLS } from '$constants/skills';
-	import { Skill } from '$lib/components';
+
+	const skillArr = Object.keys(SKILLS) as Array<TSkill>;
 </script>
 
 <section class="px-5">
@@ -13,8 +16,8 @@
 	<div
 		class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-5 lg:gap-4 xl:gap-3 pt-1 px-1 pb-5"
 	>
-		{#each SKILLS as skill}
-			<Skill {skill} />
+		{#each skillArr as skill}
+			<CSkill {skill} minLevel={SKILLS[skill].min} maxLevel={SKILLS[skill].max} />
 		{/each}
 	</div>
 </section>
