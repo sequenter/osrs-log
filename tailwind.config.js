@@ -6,6 +6,9 @@ export default {
 			gridTemplateColumns: {
 				24: 'repeat(24, minmax(0, 1fr))'
 			},
+			transitionProperty: {
+				width: 'width'
+			},
 			colors: {
 				birch: {
 					50: '#e9e9d8',

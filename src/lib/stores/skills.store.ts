@@ -6,7 +6,7 @@ interface SkillDetail {
 	locked: boolean;
 }
 
-type SkillDetails = {
+export type SkillDetails = {
 	[skill in TSkill]: SkillDetail;
 };
 

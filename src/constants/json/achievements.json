@@ -1,0 +1,654 @@
+[
+    {
+       "diary":"Falador",
+       "img":"Asgarnia Area Badge",
+       "difficulty":"Easy",
+       "task":"Climb over the western Falador wall",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":5
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Lumbridge & Draynor",
+       "img":"Misthalin Area Badge",
+       "difficulty":"Easy",
+       "task":"Complete a lap of the Draynor Village Rooftop Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":10
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Karamja",
+       "img":"Karamja Area Badge",
+       "difficulty":"Easy",
+       "task":"Use the rope swing to travel to the Moss Giant Island north-west of Karamja",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":10
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Karamja",
+       "img":"Karamja Area Badge",
+       "difficulty":"Medium",
+       "task":"Cross the lava using the stepping stones within Brimhaven Dungeon",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":12
+             },
+             {
+                "Woodcutting":10
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Varrock",
+       "img":"Banner (Varrock)",
+       "difficulty":"Easy",
+       "task":"Jump over the fence south of Varrock",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":13
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Karamja",
+       "img":"Karamja Area Badge",
+       "difficulty":"Easy",
+       "task":"Explore Cairn Island to the west of Karamja",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":15
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Wilderness",
+       "img":"Wilderness Area Badge",
+       "difficulty":"Easy",
+       "task":"Kill an Earth warrior in the Wilderness beneath Edgeville",
+       "requirements":{
+          "combat":true,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":15
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Kandarin",
+       "img":"Kandarin Area Badge",
+       "difficulty":"Easy",
+       "task":"Cross the Coal Trucks log balance",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":20
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Lumbridge & Draynor",
+       "img":"Misthalin Area Badge",
+       "difficulty":"Medium",
+       "task":"Complete a lap of the Al Kharid Rooftop Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":20
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Desert",
+       "img":"Desert Area Badge",
+       "difficulty":"Medium",
+       "task":"Climb to the summit of the Agility Pyramid",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":30
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Varrock",
+       "img":"Banner (Varrock)",
+       "difficulty":"Medium",
+       "task":"Complete a lap of the Varrock Rooftop Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":30
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Kandarin",
+       "img":"Kandarin Area Badge",
+       "difficulty":"Medium",
+       "task":"Complete a lap of the Barbarian Agility Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             "Alfred Grimhand's Barcrawl"
+          ],
+          "skills":[
+             {
+                "Agility":35
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Western Provinces",
+       "img":"Gnome child icon",
+       "difficulty":"Medium",
+       "task":"Take the Agility shortcut from the Grand Tree to Otto's Grotto",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             "The Grand Tree"
+          ],
+          "skills":[
+             {
+                "Agility":37
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Morytania",
+       "img":"Morytania Area Badge",
+       "difficulty":"Medium",
+       "task":"Complete a lap of the Canifis Rooftop Agility Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             "Priest in Peril"
+          ],
+          "skills":[
+             {
+                "Agility":40
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Falador",
+       "img":"Asgarnia Area Badge",
+       "difficulty":"Medium",
+       "task":"Squeeze through the crevice in the Dwarven Mines",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":42
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Kandarin",
+       "img":"Kandarin Area Badge",
+       "difficulty":"Hard",
+       "task":"Catch a Leaping sturgeon",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":45
+             },
+             {
+                "Fishing":70
+             },
+             {
+                "Strength":45
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Lumbridge & Draynor",
+       "img":"Misthalin Area Badge",
+       "difficulty":"Hard",
+       "task":"Squeeze past the jutting wall on your way to the Cosmic Altar",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             "Lost City"
+          ],
+          "skills":[
+             {
+                "Agility":46
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Western Provinces",
+       "img":"Gnome child icon",
+       "difficulty":"Hard",
+       "task":"Complete a lap of the Ape Atoll Agility Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             "Monkey Madness I"
+          ],
+          "skills":[
+             {
+                "Agility":48
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Kourend & Kebos",
+       "img":"Kourend Area Badge",
+       "difficulty":"Medium",
+       "task":"Use the boulder leap shortcut in the dense essence mine",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":49
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Falador",
+       "img":"Asgarnia Area Badge",
+       "difficulty":"Hard",
+       "task":"Complete a lap of the Falador Rooftop Agility Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":50
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Karamja",
+       "img":"Karamja Area Badge",
+       "difficulty":"Hard",
+       "task":"Kill a Deathwing in the dungeon under the Kharazi Jungle",
+       "requirements":{
+          "combat":true,
+          "quests":[
+             "Legends' Quest"
+          ],
+          "skills":[
+             
+          ]
+       }
+    },
+    {
+       "diary":"Western Provinces",
+       "img":"Gnome child icon",
+       "difficulty":"Hard",
+       "task":"Kill an Elf with a Crystal bow",
+       "requirements":{
+          "combat":true,
+          "quests":[
+             "Roving Elves"
+          ],
+          "skills":[
+             {
+                "Agility":50
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Varrock",
+       "img":"Banner (Varrock)",
+       "difficulty":"Hard",
+       "task":"Squeeze through the obstacle pipe in Edgeville Dungeon",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":51
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Wilderness",
+       "img":"Wilderness Area Badge",
+       "difficulty":"Medium",
+       "task":"Complete a lap of the Wilderness Agility Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":52
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Kandarin",
+       "img":"Kandarin Area Badge",
+       "difficulty":"Hard",
+       "task":"Complete a lap of the Seers' Village Rooftop Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":60
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Kandarin",
+       "img":"Kandarin Area Badge",
+       "difficulty":"Elite",
+       "task":"Mix a Stamina mix on top of the Seers' Village bank",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":60
+             },
+             {
+                "Herblore":86
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Wilderness",
+       "img":"Wilderness Area Badge",
+       "difficulty":"Medium",
+       "task":"Enter the Wilderness God Wars Dungeon",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":60,
+                "Strength":60
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Wilderness",
+       "img":"Wilderness Area Badge",
+       "difficulty":"Elite",
+       "task":"Slay a Spiritual mage within the Wilderness God Wars Dungeon",
+       "requirements":{
+          "combat":true,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":60
+             },
+             {
+                "Slayer":83
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Wilderness",
+       "img":"Wilderness Area Badge",
+       "difficulty":"Hard",
+       "task":"Take the Agility shortcut from Trollheim into the Wilderness",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             "Death Plateau"
+          ],
+          "skills":[
+             {
+                "Agility":64
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Morytania",
+       "img":"Morytania Area Badge",
+       "difficulty":"Hard",
+       "task":"Use the shortcut to get to the bridge over the Salve",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             "Priest in Peril"
+          ],
+          "skills":[
+             {
+                "Agility":65
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Lumbridge & Draynor",
+       "img":"Misthalin Area Badge",
+       "difficulty":"Elite",
+       "task":"Pickpocket Movario on the Dorgesh-Kaan Agility Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":70
+             },
+             {
+                "Ranged":70
+             },
+             {
+                "Strength":70
+             },
+             {
+                "Thieving":42
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Desert",
+       "img":"Desert Area Badge",
+       "difficulty":"Hard",
+       "task":"Complete a lap of the Pollnivneach Rooftop Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":70
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Morytania",
+       "img":"Morytania Area Badge",
+       "difficulty":"Hard",
+       "task":"Climb the advanced spike chain within the Slayer Tower",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             "Priest in Peril"
+          ],
+          "skills":[
+             {
+                "Agility":71
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Fremennik",
+       "img":"Fremennik Area Badge",
+       "difficulty":"Elite",
+       "task":"Complete a lap of the Rellekka Rooftop Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":80
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Falador",
+       "img":"Asgarnia Area Badge",
+       "difficulty":"Elite",
+       "task":"Jump over the strange floor in Taverley Dungeon",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":80
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Western Provinces",
+       "img":"Gnome child icon",
+       "difficulty":"Elite",
+       "task":"Use the Elven Overpass advanced cliffside shortcut",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             "Underground Pass"
+          ],
+          "skills":[
+             {
+                "Agility":85
+             }
+          ]
+       }
+    },
+    {
+       "diary":"Ardounge",
+       "img":"Banner (Kandarin)",
+       "difficulty":"Elite",
+       "task":"Complete a lap of Ardougne's Rooftop Agility Course",
+       "requirements":{
+          "combat":false,
+          "quests":[
+             
+          ],
+          "skills":[
+             {
+                "Agility":90
+             }
+          ]
+       }
+    }
+ ]

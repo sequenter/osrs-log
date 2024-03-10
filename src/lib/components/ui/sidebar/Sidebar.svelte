@@ -2,8 +2,10 @@
 	import { ProgressBar, ProgressNumeral } from '$lib/components';
 	import { SECTIONS } from '$constants/sections';
 	import { SKILLS } from '$constants/skills';
-	import { Skills as SSkills } from '$stores/skills.store';
+	import { Skills } from '$stores/skills.store';
 	import type { Section } from '$lib/types';
+	import { Achievements } from '$stores/achievements.store';
+	import { getAvailableAchievements } from '$lib/utils/available.utils';
 
 	const sectionsArr = Object.keys(SECTIONS) as Array<Section>;
 	const totalSkills = Object.keys(SKILLS).length;
@@ -18,12 +20,14 @@
 		<ProgressNumeral
 			title="Skills"
 			total={totalSkills}
-			complete={Object.values($SSkills).filter((item) => !item.locked).length}
+			complete={Object.values($Skills).filter((item) => !item.locked).length}
 		/>
 		<ProgressNumeral title="Quest Points" total={300} complete={0} />
 
-		{#each sectionsArr as section}
-			<ProgressBar {section} />
-		{/each}
+		<ProgressBar
+			section="Achievements"
+			total={getAvailableAchievements($Skills).length}
+			complete={$Achievements.length}
+		/>
 	</div>
 </section>

@@ -10,15 +10,15 @@
 	export let minLevel: number;
 	export let maxLevel: number;
 
-	function handlePress() {
-		$Skills[skill].locked = !$Skills[skill].locked;
-	}
-
 	function handleClick(val: number) {
 		if (!$Skills[skill].locked) {
 			const level = Math.min(maxLevel, Math.max(minLevel, $Skills[skill].level + val));
 			$Skills[skill].level = level;
 		}
+	}
+
+	function handlePress() {
+		$Skills[skill].locked = !$Skills[skill].locked;
 	}
 </script>
 
