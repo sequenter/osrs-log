@@ -27,5 +27,14 @@ module.exports = {
 				parser: '@typescript-eslint/parser'
 			}
 		}
-	]
+	],
+	rules: {
+		'sort-imports': [
+			'error',
+			{
+				ignoreCase: true,
+				ignoreDeclarationSort: true
+			}
+		]
+	}
 };

@@ -1,33 +1,37 @@
 <script lang="ts">
-	import { Achievement, Section } from '$lib/components';
-	import { Skills } from '$stores/skills.store';
-	import { getAvailableAchievements } from '$lib/utils/available.utils';
-	import { Achievements } from '$stores/achievements.store';
+	import { Achievement } from '$lib/components/ui/sections/tiles';
 	import type { AchievementDetail } from '$lib/types';
+	import { Achievements } from '$stores/achievements.store';
 	import { DIFFICULTY } from '$constants/globals';
+	import { getAvailableAchievements } from '$lib/utils/available.utils';
+	import { getCompletedAchievements } from '$lib/utils/completed.utils';
+	import { Section } from '$lib/components';
+	import { Settings } from '$stores/settings.store';
+	import { Skills } from '$stores/skills.store';
 
-	let availableAchievements = getAvailableAchievements($Skills).sort(compare);
+	let availableAchievements: AchievementDetail[];
 
 	$: $Skills,
+		$Achievements,
+		$Settings,
 		(() => {
-			availableAchievements = getAvailableAchievements($Skills).sort(compare);
-		})();
-
-	$: $Achievements,
-		(() => {
-			availableAchievements = getAvailableAchievements($Skills).sort(compare);
+			availableAchievements = getAvailableAchievements($Skills, $Settings).sort(compare);
 		})();
 
 	function compare(a: AchievementDetail, b: AchievementDetail) {
 		return (
-			+$Achievements.includes(a.task) - +$Achievements.includes(b.task) ||
+			+$Achievements.includes(a.id) - +$Achievements.includes(b.id) ||
 			a.diary.localeCompare(b.diary) ||
 			DIFFICULTY[a.difficulty].compare - DIFFICULTY[b.difficulty].compare
 		);
 	}
+
+	function canShow(id: string) {
+		return $Settings.show__completed || !$Achievements.includes(id);
+	}
 </script>
 
-<Section title="Achievements" total={availableAchievements.length} complete={$Achievements.length}>
+<Section title="Achievements">
 	<img
 		slot="icon"
 		class="me-3 w-8 h-8"
@@ -35,12 +39,23 @@
 		alt="Achievements icon"
 	/>
 
+	<svelte:fragment slot="controls">
+		<h3 class="font-medium text-2xl me-3">
+			<span>{getCompletedAchievements(availableAchievements, $Achievements)}</span>/<span
+				>{availableAchievements.length}</span
+			>
+		</h3>
+	</svelte:fragment>
+
 	{#each availableAchievements as achievement}
-		<Achievement
-			img={achievement.img}
-			diary={achievement.diary}
-			difficulty={achievement.difficulty}
-			task={achievement.task}
-		/>
+		{#if canShow(achievement.id)}
+			<Achievement
+				id={achievement.id}
+				img={achievement.img}
+				diary={achievement.diary}
+				difficulty={achievement.difficulty}
+				task={achievement.task}
+			/>
+		{/if}
 	{/each}
 </Section>

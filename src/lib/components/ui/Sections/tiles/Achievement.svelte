@@ -1,16 +1,17 @@
 <script lang="ts">
 	import { DIFFICULTY, WIKI_IMAGES_ERROR, WIKI_IMAGES_URL } from '$constants/globals';
-	import type { Difficulty } from '$lib/types';
 	import { Achievements } from '$stores/achievements.store';
-	import clsx from 'clsx';
+	import type { Difficulty } from '$lib/types';
+	import { clsx } from 'clsx';
 	import { press } from 'svelte-gestures';
-	import { slide } from 'svelte/transition';
 
+	export let id: string;
 	export let img: string;
 	export let diary: string;
 	export let difficulty: Difficulty;
 	export let task: string;
 
+	$: complete = $Achievements.includes(id);
 	$: src = WIKI_IMAGES_URL + `${img.replaceAll(' ', '_')}.png`;
 
 	function handleError() {
@@ -18,10 +19,10 @@
 	}
 
 	function handlePress() {
-		if ($Achievements.includes(task)) {
-			$Achievements = $Achievements.filter((item) => item !== task);
+		if ($Achievements.includes(id)) {
+			$Achievements = $Achievements.filter((item) => item !== id);
 		} else {
-			$Achievements = [...$Achievements, task];
+			$Achievements = [...$Achievements, id];
 		}
 	}
 </script>
@@ -29,9 +30,8 @@
 <div
 	class={clsx(
 		'flex flex-col rounded-lg p-3 cursor-pointer transition-opacity drop-shadow-lg hover:outline bg-birch-500',
-		$Achievements.includes(task) && 'opacity-60'
+		complete && 'opacity-60'
 	)}
-	transition:slide={{ duration: 150 }}
 	use:press={{ triggerBeforeFinished: true }}
 	on:press={handlePress}
 >
@@ -48,5 +48,8 @@
 	<hr class="h-px my-2 bg-birch-800 border-0" />
 	<span class="text-md text-yellow-400 grow">{task}</span>
 	<hr class="h-px my-2 bg-birch-800 border-0" />
-	<span class="text-status text-md"></span>
+	<span
+		class={clsx('text-status text-md', complete && 'text-green-400', !complete && 'text-gray-400')}
+		>{complete ? 'Complete' : 'Incomplete'}</span
+	>
 </div>

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Section } from '$lib/types';
-	import { SECTIONS } from '$constants/sections';
+	import { SECTIONS } from '$constants/globals';
 
 	export let section: Section;
 	export let complete = 0;

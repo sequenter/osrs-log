@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Left, Right, SVG } from '$lib/assets';
+	import { ActionButton } from '$lib/components';
 	import { clsx } from 'clsx';
 	import { Mapper } from '$lib/utils/icons.utils';
 	import { press } from 'svelte-gestures';
@@ -33,24 +34,19 @@
 	<span class="text-md">{skill}</span>
 	<img class="w-16 h-16 my-2" src={Mapper[skill]} alt="{skill} icon" />
 	<div class="flex items-center">
-		<button
-			on:click={() => {
-				handleClick(-1);
-			}}
-		>
+		<ActionButton determiner={!$Skills[skill].locked} onClick={() => handleClick(-1)}>
 			<SVG><Left /></SVG>
-		</button>
+		</ActionButton>
 
-		<span class="px-2 text-lg font-bold w-6 flex items-center justify-center"
-			>{$Skills[skill].level}</span
+		<span
+			class={clsx(
+				'px-2 text-lg font-bold w-6 flex items-center justify-center transition-opacity',
+				$Skills[skill].locked && 'opacity-0'
+			)}>{$Skills[skill].level}</span
 		>
 
-		<button
-			on:click={() => {
-				handleClick(1);
-			}}
-		>
+		<ActionButton determiner={!$Skills[skill].locked} onClick={() => handleClick(1)}>
 			<SVG><Right /></SVG>
-		</button>
+		</ActionButton>
 	</div>
 </div>

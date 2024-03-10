@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Skills, Achievements } from '$lib/components';
+	import { Achievements, Skills } from '$lib/components';
 </script>
 
 <Skills />

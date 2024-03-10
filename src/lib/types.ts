@@ -1,6 +1,5 @@
-import type { DIFFICULTY } from '$constants/globals';
-import type { SECTIONS } from '$constants/sections';
-import type { SKILLS } from '$constants/skills';
+import type { DIFFICULTY, SECTIONS } from '$constants/globals';
+import type { SKILLS } from '$constants/json';
 
 export type Skill = keyof typeof SKILLS;
 export type Section = keyof typeof SECTIONS;
@@ -16,7 +15,8 @@ export interface Requirements {
 	skills: Array<SkillRequirement>;
 }
 
-export interface AchievementDetail {
+export interface AchievementDetails {
+	id: string;
 	diary: string;
 	img: string;
 	difficulty: Difficulty;
